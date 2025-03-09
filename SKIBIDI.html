@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt động 12A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        /* Header */
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 32px;
+            font-weight: bold;
+            position: relative;
+        }
+        .header-box {
+            display: inline-block;
+            border: 3px solid white;
+            padding: 10px 40px;
+        }
+        /* Dropdown Menu */
+        .menu {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-items {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: black;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu-items li {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .menu-items li:hover {
+            background-color: gray;
+        }
+        .menu:hover .menu-items {
+            display: block;
+        }
+        /* Hoạt động */
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .activity {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .activity img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .activity h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-box">Hoạt động</div>
+        <div class="menu">
+            Trang chủ ▼
+            <ul class="menu-items">
+                <li>Đá bóng</li>
+                <li>Flashmob</li>
+                <li>Lì xì</li>
+                <li>Hải đăng</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hoạt động -->
+    <div class="activities">
+        <div class="activity">
+            <img src="DABONG.jpg" alt="Đá bóng">
+            <h3>Đá bóng</h3>
+            <p>Một số hình ảnh của đội bóng đá nam.</p>
+        </div>
+        <div class="activity">
+            <img src="DABONG.jpg" alt="Flashmob">
+            <h3>Flashmob</h3>
+            <p>Những khoảnh khắc đáng nhớ của đội flashmob.</p>
+        </div>
+    </div>
+
+</body>
+</html>
